@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('#notif-btn').on('click', function(e){
+        $("#notif").fadeIn();
+        $.post('/api/clear-notifications', {_token: $('input[name=_token]').val()}, function(resp){
+            if(resp.status == "done"){
+                $('.notif_count').remove();
+            }
+            console.log(resp);
+        });
+        e.preventDefault();
+    });
+
+    $('#notif-modal-bg, #notif-modal-close').on('click', function(e){
+        $('#notif').fadeOut();
+        e.preventDefault();
+    });
+});
