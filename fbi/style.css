@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px #00FFFF;
+  }
+  
+  #click-to-read {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+
+  p {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  
+  .asterix {
+    color: pink;
+    text-shadow: 2px 2px 5px #bc0f0f;
+    font-weight: 900;
+    background-image: url(rain.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  
